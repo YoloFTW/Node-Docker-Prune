@@ -58,8 +58,23 @@ The default time is set at 00:00:00 each day.
 
 You can also edit the "TITLE" variable to change how the module is reflected in the webhook message.
 
-Node-Docker-Prune will also need elevated privilages to run. This can be acomplished either by running as sudo **NOT RECOMENDED** or by running the app as a user with access to docker commands
+Node-Docker-Prune will also need elevated privilages to run. This can be acomplished either by running as sudo **NOT RECOMENDED** or by running the app as a user with access to docker commands.
 
+</br>
+
+This can be done with:
+
+```bash
+sudo adduser newuser
+```
+
+</br>
+
+The new user then can be added to the docker group with:
+
+```shell
+sudo usermod -aG docker newuser
+```
 
 </br>
 
@@ -72,7 +87,16 @@ To start Node-Docker-Prune, run the following command:
 node index.js
 ```
 
-Once configured and started, Node-Docker-Prune will handle the automatic restarts of your wings service as per the defined schedule. It will also send status updates to the specified Discord webhook after each restart.
+</br>
+
+If you want to use the new user whilst logged into a different acoount, this can be acomplished with:
+
+```bash
+sudo -u newuser node index.js
+```
+
+
+Once configured and started, Node-Docker-Prune will handle the automatic pruning of unused docker images as per the defined schedule. It will also send status updates to the specified Discord webhook after each restart.
 
 </br>
 
@@ -84,6 +108,8 @@ This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file
 ## Contribution <a name="Contribution"></a>
 
 Contributions are welcome! If you find a bug or have any suggestions, please open an issue or create a pull request.
+
+</br>
 
 ## Authors <a name = "authors"></a>
 
