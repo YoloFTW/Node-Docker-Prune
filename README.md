@@ -25,6 +25,8 @@
 
 - [Contribution](#Contribution)
 
+- [Sponsored by](#SponsoredBy)
+
 - [Authors](#authors)
 
 </br>
@@ -108,6 +110,12 @@ This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file
 ## Contribution <a name="Contribution"></a>
 
 Contributions are welcome! If you find a bug or have any suggestions, please open an issue or create a pull request.
+
+</br>
+
+## Sponsored by <a name="SponsoredBy"></a>
+
+This has been sponsored by [Cybrancee](https://cybrancee.com/andreisawesome)
 
 </br>
 
